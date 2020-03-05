@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7518E0DFA8C2CC3FC0768D08 /* libPods-PhotoGallery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D74F598FA3B693CEE7148902 /* libPods-PhotoGallery.a */; };
+		E3235EB723FE9C2200C17972 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3235EB623FE9C2200C17972 /* SignupViewController.swift */; };
+		E331B3832403F7EF007E04EA /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E331B3822403F7EF007E04EA /* GalleryViewController.swift */; };
+		E331B38A24053E13007E04EA /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E331B38924053E13007E04EA /* ProfileManager.swift */; };
+		E33C16B02402C89D00145D1E /* AutorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C16AF2402C89D00145D1E /* AutorizationManager.swift */; };
+		E3B1EFE223FE8D0800FC4081 /* UIViewController+Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B1EFE123FE8D0800FC4081 /* UIViewController+Extantion.swift */; };
+		E3BAC3C723FA8B9700984A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BAC3C623FA8B9700984A8F /* AppDelegate.swift */; };
+		E3BAC3C923FA8B9700984A8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BAC3C823FA8B9700984A8F /* SceneDelegate.swift */; };
+		E3BAC3CE23FA8B9700984A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BAC3CC23FA8B9700984A8F /* Main.storyboard */; };
+		E3BAC3D023FA8B9A00984A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BAC3CF23FA8B9A00984A8F /* Assets.xcassets */; };
+		E3BAC3D323FA8B9A00984A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BAC3D123FA8B9A00984A8F /* LaunchScreen.storyboard */; };
+		E3BAC3DE23FA8F2A00984A8F /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BAC3DD23FA8F2A00984A8F /* SigninViewController.swift */; };
+		E3BAC3E023FA934600984A8F /* SigninView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BAC3DF23FA934600984A8F /* SigninView.xib */; };
+		E3BAC3E423FA973300984A8F /* UIView+Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BAC3E323FA973300984A8F /* UIView+Extantion.swift */; };
+		E3BAC3E623FAA38600984A8F /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BAC3E523FAA38600984A8F /* SigninView.swift */; };
+		E3C3A129240703ED00E3BAF4 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3A128240703ED00E3BAF4 /* PhotoCell.swift */; };
+		E3C3A12B2407CBBE00E3BAF4 /* PhotoCollectionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3A12A2407CBBE00E3BAF4 /* PhotoCollectionStorage.swift */; };
+		E3C3A12D2407D68500E3BAF4 /* PhotoCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3A12C2407D68500E3BAF4 /* PhotoCollectionManager.swift */; };
+		E3C3A131240FF54200E3BAF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3A130240FF54200E3BAF4 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BE422DFDF259BB3A27E8178 /* Pods-PhotoGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGallery.debug.xcconfig"; path = "Target Support Files/Pods-PhotoGallery/Pods-PhotoGallery.debug.xcconfig"; sourceTree = "<group>"; };
+		B50979F1323DA2B685AC49EA /* Pods-PhotoGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGallery.release.xcconfig"; path = "Target Support Files/Pods-PhotoGallery/Pods-PhotoGallery.release.xcconfig"; sourceTree = "<group>"; };
+		D74F598FA3B693CEE7148902 /* libPods-PhotoGallery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoGallery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3235EB623FE9C2200C17972 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E328CA662402DF980086AAEF /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E331B37D240313A8007E04EA /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E331B38124031968007E04EA /* PhotoGalleryRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoGalleryRelease.entitlements; sourceTree = "<group>"; };
+		E331B3822403F7EF007E04EA /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		E331B38924053E13007E04EA /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		E33C16AF2402C89D00145D1E /* AutorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationManager.swift; sourceTree = "<group>"; };
+		E3907A4B240300C20052F92D /* Locksmith.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Locksmith.framework.dSYM; path = Carthage/Build/iOS/Locksmith.framework.dSYM; sourceTree = "<group>"; };
+		E3907A4C240301640052F92D /* 38CBE2E1-D1C2-3A55-9C61-4ED14337052D.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "38CBE2E1-D1C2-3A55-9C61-4ED14337052D.bcsymbolmap"; path = "Carthage/Build/iOS/38CBE2E1-D1C2-3A55-9C61-4ED14337052D.bcsymbolmap"; sourceTree = "<group>"; };
+		E3907A4D2403016F0052F92D /* E642450C-2D87-3624-A8F5-C044CDF20933.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "E642450C-2D87-3624-A8F5-C044CDF20933.bcsymbolmap"; path = "Carthage/Build/iOS/E642450C-2D87-3624-A8F5-C044CDF20933.bcsymbolmap"; sourceTree = "<group>"; };
+		E3B1EFE123FE8D0800FC4081 /* UIViewController+Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extantion.swift"; sourceTree = "<group>"; };
+		E3B987FF2403032400E17C80 /* Locksmith */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Locksmith; path = Carthage/Build/iOS/Locksmith.framework/Locksmith; sourceTree = "<group>"; };
+		E3B988032403034E00E17C80 /* Locksmith.framework..dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Locksmith.framework..dSYM; path = Carthage/Build/iOS/Locksmith.framework..dSYM; sourceTree = "<group>"; };
+		E3BAC3C323FA8B9700984A8F /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BAC3C623FA8B9700984A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3BAC3C823FA8B9700984A8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3BAC3CD23FA8B9700984A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3BAC3CF23FA8B9A00984A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3BAC3D223FA8B9A00984A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3BAC3D423FA8B9A00984A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BAC3DD23FA8F2A00984A8F /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		E3BAC3DF23FA934600984A8F /* SigninView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninView.xib; sourceTree = "<group>"; };
+		E3BAC3E323FA973300984A8F /* UIView+Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extantion.swift"; sourceTree = "<group>"; };
+		E3BAC3E523FAA38600984A8F /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		E3C3A128240703ED00E3BAF4 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		E3C3A12A2407CBBE00E3BAF4 /* PhotoCollectionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionStorage.swift; sourceTree = "<group>"; };
+		E3C3A12C2407D68500E3BAF4 /* PhotoCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionManager.swift; sourceTree = "<group>"; };
+		E3C3A130240FF54200E3BAF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3BAC3C023FA8B9700984A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7518E0DFA8C2CC3FC0768D08 /* libPods-PhotoGallery.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D69B3B062BA725D9EA7D91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BE422DFDF259BB3A27E8178 /* Pods-PhotoGallery.debug.xcconfig */,
+				B50979F1323DA2B685AC49EA /* Pods-PhotoGallery.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B608DA10176270D3614564BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E331B37D240313A8007E04EA /* Locksmith.framework */,
+				E3B988032403034E00E17C80 /* Locksmith.framework..dSYM */,
+				E3B987FF2403032400E17C80 /* Locksmith */,
+				E3907A4D2403016F0052F92D /* E642450C-2D87-3624-A8F5-C044CDF20933.bcsymbolmap */,
+				E3907A4C240301640052F92D /* 38CBE2E1-D1C2-3A55-9C61-4ED14337052D.bcsymbolmap */,
+				E3907A4B240300C20052F92D /* Locksmith.framework.dSYM */,
+				E328CA662402DF980086AAEF /* Locksmith.framework */,
+				D74F598FA3B693CEE7148902 /* libPods-PhotoGallery.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3BAC3BA23FA8B9700984A8F = {
+			isa = PBXGroup;
+			children = (
+				E3BAC3C523FA8B9700984A8F /* PhotoGallery */,
+				E3BAC3C423FA8B9700984A8F /* Products */,
+				44D69B3B062BA725D9EA7D91 /* Pods */,
+				B608DA10176270D3614564BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3BAC3C423FA8B9700984A8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3BAC3C323FA8B9700984A8F /* PhotoGallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3BAC3C523FA8B9700984A8F /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				E331B38124031968007E04EA /* PhotoGalleryRelease.entitlements */,
+				E3BAC3DC23FA8EDF00984A8F /* Controller */,
+				E3BAC3DB23FA8ED800984A8F /* Model */,
+				E3BAC3DA23FA8ECF00984A8F /* View */,
+				E3BAC3C623FA8B9700984A8F /* AppDelegate.swift */,
+				E3BAC3C823FA8B9700984A8F /* SceneDelegate.swift */,
+				E3BAC3CC23FA8B9700984A8F /* Main.storyboard */,
+				E3BAC3CF23FA8B9A00984A8F /* Assets.xcassets */,
+				E3BAC3D123FA8B9A00984A8F /* LaunchScreen.storyboard */,
+				E3BAC3D423FA8B9A00984A8F /* Info.plist */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		E3BAC3DA23FA8ECF00984A8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3BAC3DF23FA934600984A8F /* SigninView.xib */,
+				E3BAC3E523FAA38600984A8F /* SigninView.swift */,
+				E3BAC3E323FA973300984A8F /* UIView+Extantion.swift */,
+				E3B1EFE123FE8D0800FC4081 /* UIViewController+Extantion.swift */,
+				E3C3A128240703ED00E3BAF4 /* PhotoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3BAC3DB23FA8ED800984A8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E33C16AF2402C89D00145D1E /* AutorizationManager.swift */,
+				E331B38924053E13007E04EA /* ProfileManager.swift */,
+				E3C3A12A2407CBBE00E3BAF4 /* PhotoCollectionStorage.swift */,
+				E3C3A12C2407D68500E3BAF4 /* PhotoCollectionManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3BAC3DC23FA8EDF00984A8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3BAC3DD23FA8F2A00984A8F /* SigninViewController.swift */,
+				E3235EB623FE9C2200C17972 /* SignupViewController.swift */,
+				E331B3822403F7EF007E04EA /* GalleryViewController.swift */,
+				E3C3A130240FF54200E3BAF4 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3BAC3C223FA8B9700984A8F /* PhotoGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BAC3D723FA8B9A00984A8F /* Build configuration list for PBXNativeTarget "PhotoGallery" */;
+			buildPhases = (
+				36D3F87A7D228B977AF59C0F /* [CP] Check Pods Manifest.lock */,
+				E3BAC3BF23FA8B9700984A8F /* Sources */,
+				E3BAC3C023FA8B9700984A8F /* Frameworks */,
+				E3BAC3C123FA8B9700984A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoGallery;
+			productName = PhotoGallery;
+			productReference = E3BAC3C323FA8B9700984A8F /* PhotoGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3BAC3BB23FA8B9700984A8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Artiom Poluyanovich";
+				TargetAttributes = {
+					E3BAC3C223FA8B9700984A8F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E3BAC3BE23FA8B9700984A8F /* Build configuration list for PBXProject "PhotoGallery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3BAC3BA23FA8B9700984A8F;
+			productRefGroup = E3BAC3C423FA8B9700984A8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3BAC3C223FA8B9700984A8F /* PhotoGallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3BAC3C123FA8B9700984A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BAC3D323FA8B9A00984A8F /* LaunchScreen.storyboard in Resources */,
+				E3BAC3D023FA8B9A00984A8F /* Assets.xcassets in Resources */,
+				E3BAC3E023FA934600984A8F /* SigninView.xib in Resources */,
+				E3BAC3CE23FA8B9700984A8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36D3F87A7D228B977AF59C0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoGallery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3BAC3BF23FA8B9700984A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E33C16B02402C89D00145D1E /* AutorizationManager.swift in Sources */,
+				E3BAC3E423FA973300984A8F /* UIView+Extantion.swift in Sources */,
+				E331B38A24053E13007E04EA /* ProfileManager.swift in Sources */,
+				E3235EB723FE9C2200C17972 /* SignupViewController.swift in Sources */,
+				E3BAC3DE23FA8F2A00984A8F /* SigninViewController.swift in Sources */,
+				E3C3A129240703ED00E3BAF4 /* PhotoCell.swift in Sources */,
+				E3C3A12B2407CBBE00E3BAF4 /* PhotoCollectionStorage.swift in Sources */,
+				E3BAC3E623FAA38600984A8F /* SigninView.swift in Sources */,
+				E3BAC3C723FA8B9700984A8F /* AppDelegate.swift in Sources */,
+				E3C3A131240FF54200E3BAF4 /* SettingsViewController.swift in Sources */,
+				E331B3832403F7EF007E04EA /* GalleryViewController.swift in Sources */,
+				E3BAC3C923FA8B9700984A8F /* SceneDelegate.swift in Sources */,
+				E3C3A12D2407D68500E3BAF4 /* PhotoCollectionManager.swift in Sources */,
+				E3B1EFE223FE8D0800FC4081 /* UIViewController+Extantion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3BAC3CC23FA8B9700984A8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BAC3CD23FA8B9700984A8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3BAC3D123FA8B9A00984A8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BAC3D223FA8B9A00984A8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3BAC3D523FA8B9A00984A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3BAC3D623FA8B9A00984A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3BAC3D823FA8B9A00984A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE422DFDF259BB3A27E8178 /* Pods-PhotoGallery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SK72H5U39;
+				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Locksmith.framework",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apoluyanovich.PhotoGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E3BAC3D923FA8B9A00984A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B50979F1323DA2B685AC49EA /* Pods-PhotoGallery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoGallery/PhotoGalleryRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SK72H5U39;
+				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Locksmith.framework",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apoluyanovich.PhotoGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3BAC3BE23FA8B9700984A8F /* Build configuration list for PBXProject "PhotoGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BAC3D523FA8B9A00984A8F /* Debug */,
+				E3BAC3D623FA8B9A00984A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BAC3D723FA8B9A00984A8F /* Build configuration list for PBXNativeTarget "PhotoGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BAC3D823FA8B9A00984A8F /* Debug */,
+				E3BAC3D923FA8B9A00984A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3BAC3BB23FA8B9700984A8F /* Project object */;
+}
