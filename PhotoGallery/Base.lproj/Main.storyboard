@@ -140,14 +140,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-tb-y8Z" userLabel="Bottom View">
                                         <rect key="frame" x="0.0" y="712" width="375" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userSetting" translatesAutoresizingMaskIntoConstraints="NO" id="ugR-pt-Qhu">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userSettings" translatesAutoresizingMaskIntoConstraints="NO" id="ugR-pt-Qhu">
                                                 <rect key="frame" x="280" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="4HR-us-QaJ"/>
                                                     <constraint firstAttribute="height" constant="40" id="NnM-N5-m34"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editorSettings" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-9Y-P2R">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appSetting" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-9Y-P2R">
                                                 <rect key="frame" x="55" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="OQb-ZK-e9G"/>
@@ -227,13 +227,13 @@
                         <viewLayoutGuide key="safeArea" id="siU-B2-L31"/>
                     </view>
                     <connections>
+                        <outlet property="appSettingsImageView" destination="nR1-9Y-P2R" id="mV2-Tq-JW6"/>
                         <outlet property="bottomView" destination="Xdd-tb-y8Z" id="W6O-F8-Po9"/>
                         <outlet property="collectionView" destination="onj-CY-bIs" id="8E1-Ee-SAC"/>
-                        <outlet property="editorSettingImageView" destination="nR1-9Y-P2R" id="bs5-HQ-Yql"/>
                         <outlet property="galleryLabel" destination="GFt-2d-jeg" id="jHB-z6-yWi"/>
                         <outlet property="profileImageView" destination="qYs-Er-GU5" id="LO8-Zf-2GH"/>
                         <outlet property="topView" destination="bB2-g9-5E5" id="HYX-w1-GGc"/>
-                        <outlet property="userSettingImageView" destination="ugR-pt-Qhu" id="3Xb-YL-O7a"/>
+                        <outlet property="userSettingsImageView" destination="ugR-pt-Qhu" id="d2K-G2-fn3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwk-hy-B1Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -441,12 +441,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-UV-xUe">
-                                <rect key="frame" x="92.666666666666686" y="732" width="189.66666666666663" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="QcD-Rk-2iu"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-9u-P9i" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                 <subviews>
@@ -555,8 +549,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dcP-UV-xUe" firstAttribute="centerX" secondItem="Tm0-6f-CXi" secondAttribute="centerX" id="3n5-VX-AIH"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="dcP-UV-xUe" secondAttribute="bottom" constant="15" id="AIM-vr-S9R"/>
                             <constraint firstItem="u5w-9u-P9i" firstAttribute="leading" secondItem="Tm0-6f-CXi" secondAttribute="leading" id="DEt-U1-Ehm"/>
                             <constraint firstItem="u5w-9u-P9i" firstAttribute="top" secondItem="IIX-r9-Z75" secondAttribute="bottom" id="FKW-5C-QjJ"/>
                             <constraint firstItem="XMk-lf-cK1" firstAttribute="top" secondItem="u5w-9u-P9i" secondAttribute="bottom" id="GpE-JU-UHz"/>
@@ -571,16 +563,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tm0-6f-CXi"/>
                     </view>
-                    <connections>
-                        <outlet property="addPhotoImageView" destination="HpG-8b-tOM" id="mg2-PF-THb"/>
-                        <outlet property="addPhotoView" destination="KAD-FC-Quq" id="jD2-rg-YvI"/>
-                        <outlet property="doneImageView" destination="Cxa-50-jap" id="tln-gt-KLk"/>
-                        <outlet property="emailTextField" destination="smc-D2-4xf" id="ocq-6P-Mnj"/>
-                        <outlet property="nameTextField" destination="VcO-c7-OD3" id="blE-24-O1d"/>
-                        <outlet property="returnImageView" destination="lSe-cm-pBp" id="4ak-nQ-bXW"/>
-                        <outlet property="signUpLabel" destination="6Hx-y0-Rp9" id="tLx-Wh-UkP"/>
-                        <outlet property="topView" destination="u5w-9u-P9i" id="SFv-AU-mGB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abR-6Y-0LJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -589,13 +571,13 @@
     </scenes>
     <resources>
         <image name="add_photo" width="164" height="116"/>
+        <image name="appSetting" width="32" height="32"/>
         <image name="back" width="21" height="17"/>
         <image name="done" width="37" height="27"/>
-        <image name="editorSettings" width="32" height="32"/>
         <image name="email" width="43" height="35"/>
         <image name="loginBackground" width="414" height="896"/>
         <image name="password" width="40" height="44"/>
-        <image name="userSetting" width="32" height="32"/>
+        <image name="userSettings" width="32" height="32"/>
         <image name="username" width="40" height="38"/>
     </resources>
 </document>

@@ -8,9 +8,8 @@ class GalleryViewController: UIViewController {
     @IBOutlet weak var galleryLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var userSettingImageView: UIImageView!
-    @IBOutlet weak var editorSettingImageView: UIImageView!
-    
+    @IBOutlet weak var userSettingsImageView: UIImageView!
+    @IBOutlet weak var appSettingsImageView: UIImageView!
     
     let plusView = UIView()
     let plusImageView = UIImageView()
@@ -44,6 +43,7 @@ class GalleryViewController: UIViewController {
         self.setPlusView()
         self.setProfilePfoto(profile: self.profileImageView)
         self.plusTapped()
+        self.userSettingsTapped()
         self.updatePhotoCollection()
     }
     
@@ -80,8 +80,8 @@ class GalleryViewController: UIViewController {
         self.topView.addGradient(startPointColor: self.startColor, endPointColor: self.endColor)
         self.bottomView.addGradient(startPointColor: self.startColor, endPointColor: self.endColor)
         self.topView.bringSubviewToFront(self.galleryLabel)
-        self.bottomView.bringSubviewToFront(self.userSettingImageView)
-        self.bottomView.bringSubviewToFront(self.editorSettingImageView)
+        self.bottomView.bringSubviewToFront(self.appSettingsImageView)
+        self.bottomView.bringSubviewToFront(self.userSettingsImageView)
     }
     
     private func plusTapped() {
@@ -98,6 +98,17 @@ class GalleryViewController: UIViewController {
         self.imagePicker.sourceType = .photoLibrary
         self.present(imagePicker, animated: true, completion: nil)
     }
+    
+    private func userSettingsTapped() {
+           let tap = UITapGestureRecognizer(target: self, action: #selector(userSettingsTap(_:)))
+           self.userSettingsImageView.addGestureRecognizer(tap)
+           self.userSettingsImageView.isUserInteractionEnabled = true
+       }
+       
+       @objc func userSettingsTap(_ sender: UITapGestureRecognizer) {
+        guard let controller = self.storyboard?.instantiateViewController(identifier: "SettingsViewController") as? SettingsViewController else {return}
+        self.navigationController?.pushViewController(controller, animated: true)
+       }
     
     private func setProfilePfoto(profile: UIImageView) {
         let userImage = ProfileManager.shared.loadImage() ?? UIImage(named: "userProfile")
